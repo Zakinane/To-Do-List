@@ -111,6 +111,7 @@ function checkEasterEgg(taskText) {
       paper.appendChild(Mari);
 
       body.style.backgroundImage = "url(img/bluryBackgroundMari.png)";
+      body.style.backgroundColor = "#4d3244";
       body.style.fontFamily = "EB Garamond";
       button.style.fontFamily = "EB Garamond";
       input.style.fontFamily = "EB Garamond";
@@ -119,6 +120,7 @@ function checkEasterEgg(taskText) {
     } else {
       document.querySelector("#Mari").remove();
       body.style.backgroundImage = "url(img/bluryBackground.png)";
+      body.style.backgroundColor = "#69a34b";
       body.style.fontFamily = "Kraby Patty";
       button.style.fontFamily = "Kraby Patty";
       input.style.fontFamily = "Kraby Patty";

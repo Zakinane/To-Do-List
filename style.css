@@ -9,10 +9,11 @@ body {
   height: 100vh;
   margin: 0px;
   background-image: url(./img/bluryBackground.png);
+  background-color: #69a34b;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 #marge {
   grid-area: marge;
@@ -23,6 +24,7 @@ body {
 }
 .container {
   display: flex;
+  margin-top: 30px;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -47,6 +49,7 @@ body {
 .titre {
   grid-area: titre;
   text-align: center;
+  text-decoration: underline;
 }
 .tasks {
   grid-area: tasks;
@@ -70,32 +73,32 @@ body {
   margin: 10px 0px 10px 0px;
 }
 input {
-    font-family: "Kraby patty";
+  font-family: "Kraby patty";
   border: solid gray 1.5px;
   border-radius: 5px;
   margin-right: 30px;
 }
 button {
-    font-family: "Kraby patty";
+  font-family: "Kraby patty";
   border-radius: 5px;
   border-color: unset;
   width: 50px;
   height: 20px;
 }
 button.delete {
-    margin-left: 20px;
+  margin-left: 20px;
   background-color: rgb(220, 51, 51);
-  color: white; 
+  color: white;
 }
 button.edit {
   background-color: rgb(0, 174, 255);
   color: white;
 }
 button#add {
-    background-color: rgb(5, 182, 5);
-    color: white;
-    height: 30px;
-  }
+  background-color: rgb(5, 182, 5);
+  color: white;
+  height: 30px;
+}
 button:hover {
   cursor: pointer;
 }
