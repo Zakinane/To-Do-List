@@ -3,6 +3,8 @@
 const paper = document.getElementsByClassName("paper")[0]; //La page
 const button = document.getElementById("add"); //Le boutton
 const tasks = document.getElementsByClassName("tasks")[0]; //La div des tasks
+const body = document.querySelector("body");
+const input = document.querySelector("input");
 
 //Quand le bouton "add" est cliqué:
 
@@ -75,8 +77,16 @@ button.addEventListener("click", function () {
     //EasterEgg ;)
     if (taskText.trim() === "Mari") {
       if (existingMari) {
+        //Reset
         existingMari.remove();
+        body.style.backgroundImage = "url(img/bluryBackground.png)";
+        body.style.fontFamily = "Kraby Patty";
+        button.style.fontFamily = "Kraby Patty";
+        input.style.fontFamily = "Kraby Patty";
+        paper.style.backgroundImage = "url(img/line.png)";
+        return;
       }
+      //start
       if (existingSpongeBob) {
         existingSpongeBob.remove();
       }
@@ -84,9 +94,14 @@ button.addEventListener("click", function () {
       Mari.classList.add("titre");
       Mari.id = "Mari";
       Mari.style.width = "50px";
-      Mari.style.display = "flex";
       Mari.setAttribute("src", "img/Mari.png");
       paper.appendChild(Mari);
+
+      body.style.backgroundImage = "url(img/bluryBackgroundMari.png)";
+      body.style.fontFamily = "EB Garamond";
+      button.style.fontFamily = "EB Garamond";
+      input.style.fontFamily = "EB Garamond";
+      paper.style.backgroundImage = "url(img/lineMari.png)";
     }
   }
 });

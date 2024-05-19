@@ -2,7 +2,6 @@
   font-family: "Kraby Patty";
   src: url(assets/Krabby\ Patty.ttf);
 }
-
 body {
   display: flex;
   font-family: "Kraby Patty";
@@ -71,22 +70,22 @@ body {
   margin: 10px 0px 10px 0px;
 }
 input {
-  font-family: "Kraby patty";
+    font-family: "Kraby patty";
   border: solid gray 1.5px;
   border-radius: 5px;
   margin-right: 30px;
 }
 button {
-  font-family: "Kraby patty";
+    font-family: "Kraby patty";
   border-radius: 5px;
   border-color: unset;
-  width: 40px;
+  width: 50px;
   height: 20px;
 }
 button.delete {
     margin-left: 20px;
   background-color: rgb(220, 51, 51);
-  color: white;
+  color: white; 
 }
 button.edit {
   background-color: rgb(0, 174, 255);
