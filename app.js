@@ -74,8 +74,12 @@ button.addEventListener("click", function () {
 
     //EasterEgg ;)
     if (taskText.trim() === "Mari") {
-    existingMari.remove();
-      existingSpongeBob.remove();
+      if (existingMari) {
+        existingMari.remove();
+      }
+      if (existingSpongeBob) {
+        existingSpongeBob.remove();
+      }
       const Mari = document.createElement("img");
       Mari.classList.add("titre");
       Mari.id = "Mari";
