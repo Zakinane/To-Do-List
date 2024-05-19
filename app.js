@@ -137,59 +137,5 @@ button.addEventListener("click", function () {
     document.getElementById("addText").value = ""; //Clear le champ
     checkEasterEgg(taskText);
     updateAndSaveData();
-
-
-    //     //EasterEgg :>
-    //     const existingSpongeBob = document.querySelector("#SpongeBob");
-    //     const existingMari = document.querySelector("#Mari");
-
-    //     if (!existingMari) {
-    //       if (taskText.trim() === "SpongeBob") {
-    //         if (existingSpongeBob) {
-    //           existingSpongeBob.remove();
-    //           updateAndSaveData();
-    //         } else {
-    //           const SpongeBob = document.createElement("img");
-    //           SpongeBob.classList.add("titre");
-    //           SpongeBob.id = "SpongeBob";
-    //           SpongeBob.style.width = "50px";
-    //           SpongeBob.setAttribute("src", "img/easteregg.png");
-    //           paper.appendChild(SpongeBob);
-    //           updateAndSaveData();
-    //         }
-    //       }
-    //     }
-
-    //     //EasterEgg ;)
-    //     if (taskText.trim() === "Mari") {
-    //       if (existingMari) {
-    //         //Reset
-    //         existingMari.remove();
-    //         body.style.backgroundImage = "url(img/bluryBackground.png)";
-    //         body.style.fontFamily = "Kraby Patty";
-    //         button.style.fontFamily = "Kraby Patty";
-    //         input.style.fontFamily = "Kraby Patty";
-    //         paper.style.backgroundImage = "url(img/line.png)";
-    //         updateAndSaveData();
-    //         return;
-    //       }
-    //       //start
-    //       if (existingSpongeBob) {
-    //         existingSpongeBob.remove();
-    //       }
-    //       const Mari = document.createElement("img");
-    //       Mari.classList.add("titre");
-    //       Mari.id = "Mari";
-    //       Mari.style.width = "50px";
-    //       Mari.setAttribute("src", "img/Mari.png");
-    //       paper.appendChild(Mari);
-
-    //       body.style.backgroundImage = "url(img/bluryBackgroundMari.png)";
-    //       body.style.fontFamily = "EB Garamond";
-    //       button.style.fontFamily = "EB Garamond";
-    //       input.style.fontFamily = "EB Garamond";
-    //       paper.style.backgroundImage = "url(img/lineMari.png)";
-    //       updateAndSaveData();
-    //     }
   }
 });
